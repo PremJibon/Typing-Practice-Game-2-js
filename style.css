@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text, .input{
+    display:block;
+    width: 100%;
+    border:none;
+    outline:none;
+    padding:1em;
+    height:calc(50vh - 5px);
+    font-size:1.2em;
+    font-weight: bold;
+}
+.progress-bar{
+    height:10px;
+    background-color:rgba(0,255,0);
+    
+}
+.progress-bar.active{
+    animation: 10s animate linear;
+}
+@keyframes animate {
+    0%{
+        width:100%;
+        background-color:rgba(0,255,0);
+    }
+    50%{
+        width: 50%;
+        background-color: yellow;
+    }
+    100%{
+        width:0;
+        background-color: red;
+    }
+}
+.correct{
+    background-color: aquamarine;
+}
+.wrong{
+    background-color: rgb(226, 43, 58);
+}
